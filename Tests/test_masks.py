@@ -10,7 +10,7 @@ def test_get_mask_card_number_normal(number_card: str, expected: str):  # Про
     assert get_mask_card_number(number_card) == expected                # обработки номера карты
 
 
-def test_get_mask_card_number_small_number(): # Проверка при наборе меньшего количества цифр
+def test_get_mask_card_number_small_number():  # Проверка при наборе меньшего количества цифр
     with pytest.raises(ValueError):
         get_mask_card_number("700079228960636")
 
@@ -20,9 +20,14 @@ def test_get_mask_card_number_more_number():    # Проверка при наб
         get_mask_card_number("700079228960636123")
 
 
-def test_get_mask_card_number_invalid_number(): # Проверка при ошибке набора номера кроме цифр
+def test_get_mask_card_number_invalid_number():  # Проверка при ошибке набора номера кроме цифр
     with pytest.raises(ValueError):
         get_mask_card_number("700079d2896063r")
+
+
+def test_get_mask_card_number_zero_number():  # Проверка при отсутствии цифр
+    with pytest.raises(ValueError):
+        get_mask_card_number("")
 
 
 @pytest.mark.parametrize("number_account, expected",
