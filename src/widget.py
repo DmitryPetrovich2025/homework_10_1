@@ -41,8 +41,14 @@ def get_date(information: str) -> str:
         raise ValueError("Ошибка ввода даты")
     if information[7] != "-":
         raise ValueError("Ошибка ввода даты")
+    if information[5:7] > "12":
+        raise ValueError("Некорректный ввод месяца")
+    if information[8:10] > "31":
+        raise ValueError("Некорректный ввод даты")
+    if information[0:4] != "2025":
+        raise ValueError("Некорректный ввод года")
     data = information[0:10].split("-")
     return ".".join(data[::-1])
 
 
-print(get_date("2024-03-11T02:26:18.671407"))
+print(get_date("2025-12-31T02:26:18.671407"))

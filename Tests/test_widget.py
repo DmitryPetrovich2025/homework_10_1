@@ -46,3 +46,18 @@ def test_get_date_invalid_information():     # Проверка обработк
 def test_get_date_invalid_data():             # Проверка обработки при
     with pytest.raises(ValueError):           # ошибке ввода даты
         get_date("2024/03-T02:26:18.671407")
+
+
+def test_get_date_invalid_month():            # Проверка обработки при
+    with pytest.raises(ValueError):           # ошибке ввода месяца
+        get_date("2024-16-12T02:26:18.671407")
+
+
+def test_get_date_invalid_date():            # Проверка обработки при
+    with pytest.raises(ValueError):          # ошибке ввода даты
+        get_date("2024-12-32T02:26:18.671407")
+
+
+def test_get_date_invalid_year():            # Проверка обработки при
+    with pytest.raises(ValueError):          # ошибке ввода года
+        get_date("2024-12-32T02:26:18.671407")
