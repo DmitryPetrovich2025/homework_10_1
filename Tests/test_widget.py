@@ -17,12 +17,12 @@ def test_mask_account_card_empty_list():      # Проверка пустого 
 
 def test_mask_account_card_number_invalid():   # Проверка на корректное количество цифр
     with pytest.raises(ValueError):
-        mask_account_card("234456782345")
+        mask_account_card("Visa Gold 59994142284263")
 
 
 def test_mask_account_card_name_invalid():     # Проверка на корректное имя
     with pytest.raises(ValueError):
-        mask_account_card("Сч")
+        mask_account_card("Сче 64686473678894779589")
 
 
 @pytest.mark.parametrize("inform, expected",  # Проверка корректности обработки данных

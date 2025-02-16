@@ -22,7 +22,7 @@ def test_get_mask_card_number_more_number():    # Проверка при наб
 
 def test_get_mask_card_number_invalid_number():  # Проверка при ошибке набора номера кроме цифр
     with pytest.raises(ValueError):
-        get_mask_card_number("700079d2896063r")
+        get_mask_card_number("345234567345434r")
 
 
 def test_get_mask_card_number_zero_number():  # Проверка при отсутствии цифр
