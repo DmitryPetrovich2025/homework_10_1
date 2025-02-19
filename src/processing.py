@@ -36,7 +36,7 @@ def sort_by_date(date_info: List[Dict], sort_key: bool = True) -> List[Dict]:
         if i.get("date") == "":
             raise ValueError("Дата не введена")
         if len(i.get("date")) != 26:
-                raise ValueError("Ошибка в количестве данных")
+            raise ValueError("Ошибка в количестве данных")
     return sorted(date_info, key=lambda x: x["date"], reverse=sort_key)
 
 
