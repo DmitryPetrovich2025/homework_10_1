@@ -1,14 +1,17 @@
-# Проект homework_10_1
+# Проект homework_10_2
 
 
-## Описание :
+## Описание:
 
-Проект homework_10_1 - это приложение на Python
+Проект homework_10_2 - это приложение на Python
 для реализации следующих задач:
 1. Маскировка номера счета или карты.
 2. Обработка данных с возвратом списка по значению.
-3. Обработка данных с возвратом даты в формате ДД.ММ.ГГГГ .
+3. Обработка данных с возвратом даты.
 4. Обработка данных с возвратом данных по убыванию/возрастанию даты.
+5. Обработка данных и вывод транзакций по валюте.
+6. Обработка массивов данных с генератором по запросу.
+7. Генератор номеров карт. 
 
 
 ## Установка:
@@ -16,15 +19,16 @@
 
 1. Клонируйте репозиторий:
 ```
-git clone https://github.com:DmitryPetrovich2025/homework_10_1
+git clone https://github.com:DmitryPetrovich2025/homework_10_2
 ```
-2. Установите зависимости:
+   Установите зависимости:
 ```
 pip install -r requirements.txt
 ```
 
 
 ## Использование:
+
 
 1. Откройте приложение в вашем веб-браузере.
 2. Создайте новый проект и начните добавлять задачи.
@@ -47,9 +51,11 @@ pip install -r requirements.txt
 
 - 'masks': функции 'get_mask_card_number' и 'get_mask_account'
 - 'processing': функции 'filter_by_state' и 'sort_by_date'
-- 'widget': функции 'mask_account_card' и 'get_date'.
+- 'widget': функции 'mask_account_card' и 'get_date'
+- 'generators': 'filter_by_currency', 'transaction_descriptions', 'card_number_generator'
 
 Процент покрытия для модулей составил:
 1. 'masks' - 91 %
 2. 'processing' - 100 %
 3. 'widget' - 98 % .
+4. 'generators'- 100%
