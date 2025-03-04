@@ -9,7 +9,7 @@ def test_my_function_type_error():         # Проверка выброса о�
 
 def test_my_function_positive():            # Проверка правильности обработки
     positive = my_function(4, 2)      # данных при корректных входных данных
-    assert positive == 2
+    assert positive == 2.0
 
 
 def test_my_function_log(capsys):            # Проверка вывода в консоль при
