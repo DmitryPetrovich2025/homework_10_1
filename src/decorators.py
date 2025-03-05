@@ -31,7 +31,7 @@ def log(filename: Optional[str] = None) -> Callable:
     return decorator
 
 
-@log(filename="../mylog.txt")
+@log(filename="mylog.txt")
 def my_function(x: int, y: int) -> float:
     return x / y
 
