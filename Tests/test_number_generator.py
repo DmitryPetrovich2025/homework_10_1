@@ -1,5 +1,5 @@
 import pytest
-from generators import card_number_generator
+from src.generators import card_number_generator
 
 
 def test_card_number_generator_more_number():            # Число "stop" больше 16 знаков

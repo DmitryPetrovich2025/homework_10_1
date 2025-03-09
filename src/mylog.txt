@@ -1,2 +1,6 @@
 my_function ok
 my_function ok
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok

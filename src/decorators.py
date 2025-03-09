@@ -25,7 +25,7 @@ def log(filename: Optional[str] = None) -> Callable:
                         file.write(f"{func.__name__} error: {error_type}. Inputs {args}, {kwargs}\n")
                 else:
                     error_type = type(e).__name__
-                    file.write(f"{func.__name__} error: {error_type}. Inputs {args}, {kwargs}\n")
+                    print(f"{func.__name__} error: {error_type}. Inputs {args}, {kwargs}\n")
                 raise e
         return wrapper
     return decorator

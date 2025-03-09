@@ -1,6 +1,6 @@
 import pytest
 from data import transactions_invalid, transactions, transactions_invalid_2
-from generators import transaction_descriptions
+from src.generators import transaction_descriptions
 
 
 def test_transaction_descriptions_invalid():       # Пустой список транзакции
