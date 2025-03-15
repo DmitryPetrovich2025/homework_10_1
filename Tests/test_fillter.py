@@ -1,6 +1,6 @@
 import pytest
 from src.generators import filter_by_currency
-from data import transactions, transactions_output_1, transactions_output_2
+from data.date import transactions, transactions_output_1, transactions_output_2
 
 
 def test_filter_by_currency_invalid_empty_list():  # Пустой список выбора валюты

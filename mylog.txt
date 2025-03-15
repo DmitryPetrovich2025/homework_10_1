@@ -6,3 +6,53 @@ my_function ok
 my_function ok
 my_function error: ZeroDivisionError. Inputs (2, 0), {}
 my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok
+my_function ok
+my_function error: TypeError. Inputs (4, 'e'), {}
+my_function ok
+my_function ok
+my_function error: ZeroDivisionError. Inputs (2, 0), {}
+my_function ok

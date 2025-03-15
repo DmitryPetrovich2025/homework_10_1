@@ -1,5 +1,5 @@
 import pytest
-from data import transactions_invalid, transactions, transactions_invalid_2
+from data.date import transactions_invalid, transactions, transactions_invalid_2
 from src.generators import transaction_descriptions
 
 

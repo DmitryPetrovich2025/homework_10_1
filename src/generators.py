@@ -1,5 +1,5 @@
 from typing import List, Dict, Iterator, Optional, Union, Any
-from data import transactions
+from data.date import transactions
 
 
 def filter_by_currency(list_dict: List[Dict], in_currency: Optional[str] = None) -> Iterator[Union[Dict, str]]:
