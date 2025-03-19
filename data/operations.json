@@ -4,7 +4,7 @@
     "state": "EXECUTED",
     "date": "2019-08-26T10:50:58.294041",
     "operationAmount": {
-      "amount": "31957.58",
+      "amount": "34516.67",
       "currency": {
         "name": "руб.",
         "code": "RUB"
@@ -65,8 +65,8 @@
     "operationAmount": {
       "amount": "79114.93",
       "currency": {
-        "name": "USD",
-        "code": "USD"
+        "name": "EUR",
+        "code": "EUR"
       }
     },
     "description": "Перевод со счета на счет",

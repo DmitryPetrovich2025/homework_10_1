@@ -3,8 +3,7 @@ import requests
 from typing import Any
 from requests import RequestException
 from dotenv import load_dotenv
-from utils import get_to_transaction_file
-DATA_AMOUNT = "../data/operations.json"
+from data.normal_date import operation_normal_out
 
 
 load_dotenv("../.env")
@@ -12,6 +11,7 @@ API_KEY = os.getenv("API_KEY")
 
 
 def transaction_amount_in_rub(transactions: list, transaction_id: int) -> Any:
+    """Обработка транзакций и вывод суммы в рублях с конвертацией, если данные в валюте"""
     for transaction in transactions:
         if transaction["id"] == transaction_id:
             try:
@@ -45,5 +45,4 @@ def transaction_amount_in_rub(transactions: list, transaction_id: int) -> Any:
 
 
 if __name__ == "__main__":
-    transaction_filter = get_to_transaction_file(DATA_AMOUNT)
-    print(transaction_amount_in_rub(transactions=transaction_filter, transaction_id=441945886))
+    print(transaction_amount_in_rub(transactions=operation_normal_out, transaction_id=441945886))

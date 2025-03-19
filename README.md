@@ -13,6 +13,8 @@
 6. Обработка массивов данных с генератором по запросу.
 7. Генератор номеров карт. 
 8. Декоратор принимающий аргумент и записывающий лог в файл/выводящий в консоль.
+9. Обработка JSON-фала и вывод списка словарей о транзакциях.
+10. Обработка транзакций и вывод данных в рублях, при необходимости с конвертацией.
 
 
 ## Установка:
@@ -55,11 +57,14 @@ pip install -r requirements.txt
 - 'widget': функции 'mask_account_card' и 'get_date'
 - 'generators': функции 'filter_by_currency', 'transaction_descriptions', 'card_number_generator'
 - 'decorators': декоратор 'log'
-
+-'utils': функция 'get_to_transaction_file'
+-'external_api': функция 'transaction_amount_in_rub'
 
 Процент покрытия для модулей составил:
 1. 'masks' - 91 %
 2. 'processing' - 100 %
 3. 'widget' - 98 % .
-4. 'generators'- 100%
-5. 'decorators'- 88%
+4. 'generators' - 100%
+5. 'decorators' - 88%
+6. 'utils' - 93 %
+7. 'external_api' - 95 % 

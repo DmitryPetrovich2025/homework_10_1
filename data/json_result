@@ -1,0 +1,2 @@
+{'success': True, 'query': {'from': 'EUR', 'to': 'RUB', 'amount': 79114.93}, 'info': {'timestamp': 1742339763, 'rate': 89.45471}, 'date': '2025-03-18', 'result': 7077203.11982}
+{'success': True, 'query': {'from': 'USD', 'to': 'RUB', 'amount': 9824.07}, 'info': {'timestamp': 1742340964, 'rate': 81.749629}, 'date': '2025-03-18', 'result': 803114.07777}
