@@ -16,7 +16,7 @@
 9. Обработка JSON-фала и вывод списка словарей о транзакциях.
 10. Обработка транзакций и вывод данных в рублях, при необходимости с конвертацией.
 11. Для модулей 'masks' и 'utils' добавлено логирование соответствующих функций.
-
+12. Обработка транзакций из 'CSV' и 'EXCEL' файлов.
 
 ## Установка:
 
@@ -60,6 +60,8 @@ pip install -r requirements.txt
 - 'decorators': декоратор 'log'
 -'utils': функция 'get_to_transaction_file'
 -'external_api': функция 'transaction_amount_in_rub'
+- 'transaction_excel': функция 'get_reader_transaction_excel'
+- 'transaction_csv': функция 'get_reader_transaction_csv'
 
 Процент покрытия для модулей составил:
 1. 'masks' - 91 %
@@ -69,3 +71,5 @@ pip install -r requirements.txt
 5. 'decorators' - 88%
 6. 'utils' - 93 %
 7. 'external_api' - 95 % 
+8. 'transaction_csv' - 91 %
+9. 'transaction_excel' - 91 %

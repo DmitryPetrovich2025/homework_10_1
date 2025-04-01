@@ -10,11 +10,7 @@ def get_reader_transaction_csv(file_csv: str) -> list:
     except FileNotFoundError:
         print('Ошибка: файл не найден.')
         return []
-    except UnicodeDecodeError:
-        print('Ошибка в кодировке файла.')
-        return []
 
 
 if __name__ == '__main__':
-    result = get_reader_transaction_csv('../data/transactions.csv')
-    print(result)
+    print(get_reader_transaction_csv('../data/transactions.csv'))
